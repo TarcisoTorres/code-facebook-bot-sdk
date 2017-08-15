@@ -2,13 +2,12 @@
 /**
  * Created by PhpStorm.
  * User: tarciso
- * Date: 8/14/17
- * Time: 10:44 PM
+ * Date: 8/15/17
+ * Time: 5:54 PM
  */
-
 namespace CodeBot\Message;
 
-class Text implements Message
+class Audio implements Message
 {
     private $recipientId;
 
@@ -24,8 +23,12 @@ class Text implements Message
                 'id'=>$this->recipientId
             ],
             'message'=>[
-                'text' => $messageText,
-                'metadata' => 'DEVELOPER_DEFINED_METADATA'
+                'attachment' => [
+                    'type' => 'audio',
+                    'payload' => [
+                        'url' => $messageText
+                    ]
+                ]
             ]
         ];
     }
