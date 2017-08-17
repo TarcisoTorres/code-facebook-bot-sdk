@@ -1,6 +1,6 @@
 <?php
 
-namespace BotCode;
+namespace CodeBot;
 
 use GuzzleHttp\Client;
 

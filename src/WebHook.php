@@ -6,7 +6,7 @@
  * Time: 12:57 PM
  */
 
-namespace BotCode;
+namespace CodeBot;
 
 class WebHook
 {
