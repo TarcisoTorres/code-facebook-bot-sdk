@@ -19,6 +19,7 @@ class GenericTemplateTest extends TestCase
     {
         $button = new Button('web_url', null, 'https://angular.io/');
         $product = new Product('Produto 1', 'https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg', 'Curso de Angular', $button);
+
         $button = new Button('web_url', null, 'http://www.php.net/');
         $product2 = new Product('Produto 2', 'http://p9.storage.canalblog.com/95/52/388561/21464247.png', 'Curso de PHP', $button);
 
@@ -37,7 +38,7 @@ class GenericTemplateTest extends TestCase
                     'type' => 'template',
                     'payload' =>[
                         'template_type' => 'generic',
-                        'buttons' => [
+                        'elements' => [
                             [
                                 'title' => 'Produto 1',
                                 'subtitle' => 'Curso de Angular',
