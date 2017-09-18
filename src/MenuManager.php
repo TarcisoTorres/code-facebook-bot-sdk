@@ -23,11 +23,7 @@ class MenuManager
     public function callToAction($id, $type, $title, $parent_id, $value)
     {
         $this->call_to_actions[] = [
-            'id' => $id,
-            'type' => $type,
-            'title' => $title,
-            'parent_id' => $parent_id,
-            'value' => $value,
+
         ];
     }
 
